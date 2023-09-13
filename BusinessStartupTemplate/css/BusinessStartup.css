@@ -1,0 +1,805 @@
+* {
+    box-sizing: border-box;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway", sans-serif
+}
+
+h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.center {
+    text-align: center;
+}
+
+.font-white {
+    color: white;
+}
+
+.margin-top {
+    margin-top: 60px;
+}
+
+.margin-right {
+    margin-right: 10px
+}
+
+.padding {
+    padding: 128px 20px;
+}
+
+.button {
+    display: inline-block;
+    overflow: hidden;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/**************************************************/
+/* Start CSS Navbar (sit on top) */
+.topnav {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    overflow: hidden;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    box-shadow: 0px 2px 3px 0px #8b8a8a;
+}
+
+img.logo {
+    float: left;
+    height: 8vh;
+    margin-left: 2px;
+}
+
+/* start css of Right Navigation bar */
+.RightNavBar {
+    float: right;
+    cursor: pointer;
+}
+
+.RightNavBar a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 19px 15px;
+    color: black;
+}
+
+.RightNavBar a i {
+    margin-right: 5px;
+}
+
+.RightNavBar a:hover {
+    background-color: rgb(214, 214, 214);
+}
+
+@media only screen and (max-width: 768px) {
+    img.logo {
+        height: 6vh;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    img.logo {
+        height: 6vh;
+    }
+}
+
+/* end css of Right Navigation bar */
+
+/* menu icon */
+.iconbar {
+    float: right;
+    padding: 19px 15px;
+}
+
+.iconbar a {
+    display: none;
+    text-decoration: none;
+    overflow: hidden;
+    color: black;
+    text-align: center;
+}
+
+.iconSidebar {
+    width: 0;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 3;
+    overflow: hidden;
+    height: 100%;
+    background-color: black;
+    transition: 0.5s;
+}
+
+.icon-content {
+    padding-top: 50px;
+}
+
+.icon-content a {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 15px 18px;
+    transition: 0.3s;
+}
+
+.icon-content a:hover {
+    color: gray;
+}
+
+.closeiconbtn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: inline-block;
+    overflow: hidden;
+    color: gray;
+    transition: 0.3s;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 20px;
+}
+
+.closeiconbtn:hover {
+    color: white;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .RightNavBar {
+        display: none;
+    }
+
+    .iconbar a {
+        display: block;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .RightNavBar {
+        display: none;
+    }
+
+    .iconbar a {
+        display: block;
+    }
+}
+
+/*
+@media screen and (max-width: 768px) {
+    .RightNavBar {
+        display: none;
+    }
+    .iconbar a {
+        display: block;
+    }
+}*/
+
+/* End CSS Navbar (sit on top) */
+
+/**************************************************/
+/* Start CSS of Header with full-height image */
+header {
+    position: relative;
+    height: 100vh;
+}
+
+header.image {
+    background-image: url(../images/mac.jpg);
+    background-position: center;
+    background-size: cover;
+    max-height: 100%;
+    width: 100%;
+}
+
+.headertext {
+    position: absolute;
+    top: 25%;
+    left: 0%;
+    padding: 48px;
+    line-height: 1.7;
+}
+
+.bigtext {
+    font-size: 60px;
+}
+
+.smalltext {
+    font-size: 20px;
+}
+
+.headerlink {
+    display: inline-block;
+    overflow: hidden;
+    padding: 12px 24px;
+    margin-top: 15px;
+    text-decoration: none;
+    background-color: darkgrey;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: bold
+}
+
+.headerlink:hover {
+    background-color: white;
+}
+
+.socialmedia {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 30px 48px;
+    color: gray;
+
+}
+
+.socialmedia i:hover {
+    color: darkgrey;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .bigtext {
+        font-size: 40px;
+    }
+
+    .smalltext {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .bigtext {
+        font-size: 40px;
+        font-weight: 200;
+    }
+
+    .smalltext {
+        font-size: 20px;
+        font-weight: 200;
+    }
+}
+
+/* End CSS of Header with full-height image */
+
+/**************************************************/
+/* Start CSS of  About Section */
+.aboutsubtitle {
+    font-size: 18px;
+}
+
+.abouttitle,
+.aboutsubtitle .features i,
+p {
+    margin: 15px 0;
+}
+
+.features i {
+    font-size: 70px;
+}
+
+.featuretitle {
+    font-size: 20px;
+    margin-top: 33px;
+}
+
+.featureColumn {
+    float: left;
+    width: 25%;
+    margin-top: 60px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .featureColumn {
+        width: 50%;
+        margin-top: 60px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .featureColumn {
+        width: 100%;
+        margin-top: 60px;
+    }
+}
+
+/* End CSS of About Section */
+
+/**************************************************/
+/*Start CSS Promo Section - "We know design"*/
+.PromoSection {
+    background-color: rgb(241 241 241);
+    padding: 130px 36px;
+}
+
+.PromoContainer {
+    float: left;
+    width: 50%;
+}
+
+.promolink {
+    display: inline-block;
+    overflow: hidden;
+    text-decoration: none;
+    background-color: black;
+    padding: 12px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 550;
+}
+
+.promolink i {
+    margin-right: 5px;
+}
+
+.promolink:hover {
+    color: black;
+    background-color: rgb(215, 212, 212);
+    box-shadow: 0px 2px 3px 0px #8b8a8a;
+}
+
+.promoimg img {
+    width: 100%;
+    max-width: 100%;
+    border: 2px solid rgb(230, 230, 230);
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    .PromoContainer {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .PromoContainer {
+        width: 100%;
+    }
+}
+
+/*End CSS Promo Section - "We know design"*/
+
+/**************************************************/
+/* Start Team Section */
+.teamrow {
+    filter: grayscale(75%);
+}
+
+.teamcolumn {
+    float: left;
+    width: 25%;
+    padding: 0 8px;
+}
+
+.teamscards {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+    overflow: hidden;
+}
+
+#team img {
+    width: 100%;
+    transition: all 1s;
+    transform-origin: center;
+}
+
+#team img:hover {
+    transform: scale(1.1);
+}
+
+.title {
+    color: grey;
+}
+
+.teamintro {
+    padding: 0 16px;
+}
+
+.teamintro button {
+    background-color: rgb(215, 212, 212);
+    width: 100%;
+}
+
+.teamintro button:hover {
+    background-color: darkgray;
+}
+
+.teamscards::after,
+.teamrow::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media only screen and (max-width: 768px) {
+    .teamcolumn {
+        width: 50%;
+        padding: 8px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .teamcolumn {
+        width: 100%;
+        padding: 8px;
+    }
+}
+
+/* End Team Section */
+
+/**************************************************/
+/* start CSS  Start Promo Section "Statistics" */
+.Statistics {
+    background-color: rgb(99 97 97);
+    padding: 60px 0;
+}
+
+.Statisticscontainer {
+    float: left;
+    width: 25%;
+}
+
+.Statisticscontainer span {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 600px) {
+    .Statisticscontainer {
+        width: 100%
+    }
+}
+
+/* End CSS  Start Promo Section "Statistics" */
+
+/**************************************************/
+/* Start CSS Work Section */
+.work-image-section img {
+    float: left;
+    width: 25%;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 10px;
+}
+
+.work-image-section::after,
+.work-image-section::before {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.work-image-container img:hover {
+    opacity: 0.8;
+}
+
+/* The Modal (background) */
+.model {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    display: inline-block;
+    overflow: hidden;
+    color: gray;
+    transition: 0.3s;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 0 20px;
+}
+
+.close:hover {
+    color: white;
+    cursor: pointer;
+}
+
+/* Modal image */
+.modal-image {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+}
+
+#model-content {
+    padding: 60px 0;
+}
+
+/* Caption of Modal Image */
+.modelcaption {
+    display: block;
+    margin: 18px auto;
+    height: 100%;
+}
+
+/* Add Animation */
+@keyframes zoom {
+    from {
+        transform: scale(0.1)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+.modal-image,
+.modelcaption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@media only screen and (max-width: 768px) {
+    .work-image-section img {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .work-image-section img {
+        width: 100%;
+    }
+}
+
+/* End CSS Work Section */
+
+/**************************************************/
+/* Start CSS Skills Section */
+.skillsection {
+    background-color: rgb(241, 241, 241);
+    padding: 60px 20px;
+}
+
+.skillcontainer {
+    float: left;
+    width: 49.99999%;
+}
+
+.skillbars p {
+    letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 768px) {
+    .skillcontainer {
+        padding-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .skillcontainer {
+        width: 100%;
+    }
+}
+
+/* End CSS Skills Section */
+
+/**************************************************/
+/* Start CSS Pricing Section */
+#pricing {
+    background-color: rgb(99 97 97);
+}
+
+.PricingColuumn {
+    float: left;
+    width: 33.33%;
+    padding: 0 10px;
+}
+
+.PricingColuumn::after,
+.PricingColuumn::before {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.PricingCard {
+    background-color: white;
+    color: black;
+}
+
+.PricingCard li {
+    list-style-type: none;
+    border-bottom: 1px solid rgb(231, 229, 229);
+}
+
+.PricingCard strong {
+    margin-right: 10px;
+}
+
+.PricingCard-padding {
+    padding: 20px 0;
+}
+
+.PricingCard-margin {
+    margin: 15px 0;
+}
+
+.PricingBlack {
+    background-color: black;
+    font-size: 27px;
+    padding: 25px 0;
+}
+
+.PricingRed {
+    background-color: rgb(245, 74, 74);
+    font-size: 30px;
+    padding: 35px 0;
+}
+
+.PricingCard h2 {
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+.PricingCard span {
+    opacity: 0.5;
+}
+
+.PricingCard button {
+    display: inline-block;
+    background-color: black;
+    padding: 8px 12px;
+    border: none;
+}
+
+.PricingCard button:hover {
+    cursor: pointer;
+    background-color: gray;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.Pricing-btn-bkgrnd {
+    background-color: rgb(241, 241, 241);
+}
+
+.PricingCard:hover {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.30);
+}
+
+@media only screen and (max-width: 600px) {
+    .PricingColuumn {
+        width: 100%;
+    }
+}
+
+/* Start CSS Pricing Section */
+
+/**************************************************/
+/* Start Contact Section */
+.contactdetail p {
+    padding: 5px 0;
+}
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+
+.btn {
+    background-color: black;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: gray;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.map {
+    filter: grayscale(75%);
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Start Contact Section */
+
+/**************************************************/
+/* start Footer */
+footer {
+    background-color: black;
+    color: white;
+    padding: 60px 20px;
+}
+
+footer a {
+    background-color: white;
+    font-weight: 500;
+    color: black;
+}
+
+footer a:hover {
+    background-color: darkgray;
+}
+
+footer div {
+    margin-top: 10px;
+}
+
+footer p {
+    margin-top: 30px;
+}
+
+.hover-opacity {
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 4px;
+}
+
+.hover-opacity:hover {
+    color: darkgray;
+}
+
+@media only screen and (max-width: 600px) {
+    .hover-opacity {
+        font-size: 15px;
+    }
+}
+
+/* start Footer */
+
+/**************************************************/
+.topnav::after,
+.topnav::before,
+header::after,
+header::before,
+#about::after,
+#about::before,
+.features::after,
+.features::before,
+.PromoSection::after,
+.PromoSection::before,
+#team::after,
+#team::before,
+.Statistics::after,
+.Statistics::before,
+#work::after,
+#work::before,
+.skillsection::after,
+.skillsection::before,
+.PricingRaw::after,
+.PricingRaw::before {
+    content: " ";
+    display: table;
+    clear: both;
+}

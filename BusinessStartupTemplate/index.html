@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Startup</title>
+
+    <link rel="stylesheet" href="css/BusinessStartup.css">
+    <script src="js/script.js"></script>
+
+    <!--<link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">    
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon_io/site.webmanifest"> -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Start Navbar (sit on top) -->
+    <div class="topnav">
+        <!--Logo of company-->
+        <div style="vertical-align: middle;">
+            <a href="#home">
+                <img class="logo" src="images/Asset 3.png" alt=" Company Logo">
+            </a>
+        </div>
+
+        <!--Right Navigation bar-->
+        <div class="RightNavBar">
+            <a href="#about"><i class="fa-solid fa-address-card"></i>ABOUT</a>
+            <a href="#team"><i class="fa-solid fa-user-plus"></i>TEAM</a>
+            <a href="#work"><i class="fa-solid fa-laptop-file"></i>WORK</a>
+            <a href="#pricing"><i class="fa-solid fa-hand-holding-dollar"></i>PRICING</a>
+            <a href="#contact"><i class="fa-solid fa-envelope-open-text"></i>CONTACT</a>
+        </div>
+
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+        <div class="iconbar">
+            <a href="javascript:void(0);" onclick="iconMenuDisplay()">
+                <i class="fa-solid fa-bars fa-2xl"></i>
+            </a>
+        </div>
+    </div>
+    <!-- End Navbar (sit on top) -->
+
+    <!-- Start Sidebar on small screens when clicking the menu icon -->
+    <nav id="iconSidebar" class=" iconSidebar">
+        <a href="javascript:void(0);" class="closeiconbtn" onclick="iconSidebarClose()">
+            <i class="fa-solid fa-xmark fa-xl"></i>
+        </a>
+        <div class="icon-content">
+            <a href="#about" onclick="iconSidebarClose()">ABOUT</a>
+            <a href="#team" onclick="iconSidebarClose()">TEAM</a>
+            <a href="#work" onclick="iconSidebarClose()">WORK</a>
+            <a href="#pricing" onclick="iconSidebarClose()">PRICING</a>
+            <a href="#contact" onclick="iconSidebarClose()">CONTACT</a>
+        </div>
+    </nav>
+    <!-- End Sidebar on small screens when clicking the menu icon -->
+
+    <!-- Start Header with full-height image -->
+    <header class="image" id="home">
+        <div class="headertext font-white">
+            <span class="bigtext">Start something that matters</span>
+            <br><br>
+            <span class="smalltext">Stop wasting valuable time with projects that just isn't you.</span>
+            <br>
+            <p>
+                <a href="#about" class="headerlink">Learn more and start today</a>
+            </p>
+        </div>
+
+        <!--Social media icons-->
+        <div class="socialmedia">
+            <i class="fa-brands fa-square-facebook fa-lg"></i>
+            <i class="fa-brands fa-instagram fa-lg"></i>
+            <i class="fa-brands fa-snapchat fa-lg"></i>
+            <i class="fa-brands fa-pinterest-p fa-lg"></i>
+            <i class="fa-brands fa-twitter fa-lg"></i>
+            <i class="fa-brands fa-linkedin fa-lg"></i>
+        </div>
+    </header>
+    <!-- End Header with full-height image -->
+
+    <!-- Start About Section -->
+    <div id="about" class="padding center">
+        <h3 class="abouttitle">ABOUT THE COMPANY</h3>
+        <p class="aboutsubtitle">Key features of our company</p>
+
+        <div class="features margin-top">
+            <div class="featureColumn">
+                <i class="fa-solid fa-desktop fa-2xl"></i>
+                <p class="featuretitle">Responsive</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis doloribus dignissimos nemo cumque
+                    facilis incidunt mollitia non asperiores maiores.
+                </p>
+            </div>
+
+            <div class="featureColumn">
+                <i class="fa-solid fa-heart-circle-bolt fa-2xl"></i>
+                <p class="featuretitle">Passion</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis doloribus dignissimos nemo cumque
+                    facilis incidunt mollitia non asperiores maiores.
+                </p>
+            </div>
+
+            <div class="featureColumn">
+                <i class="fa-regular fa-gem fa-2xl"></i>
+                <p class="featuretitle">Design</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis doloribus dignissimos nemo cumque
+                    facilis incidunt mollitia non asperiores.
+                </p>
+            </div>
+
+            <div class="featureColumn">
+                <i class="fa-solid fa-gear fa-2xl"></i>
+                <p class="featuretitle">Support</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis doloribus dignissimos nemo cumque
+                    facilis incidunt mollitia non asperiores maiores.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End About Section -->
+
+    <!-- Start Promo Section - "We know design" -->
+    <div class="PromoSection" class="padding">
+        <div class="PromoContainer">
+            <div class="promotext">
+                <h3>We know design.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis doloribus dignissimos nemo cumque
+                    facilis incidunt mollitia non asperiores maiores.
+                </p>
+                <p>
+                    <a href="#work" class="promolink font-white">
+                        <i class="fa-solid fa-laptop-file"></i>
+                        View Our Works
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="PromoContainer">
+            <div class="promoimg">
+                <img src="images/phone_buildings.jpg" alt="phone_buildings">
+            </div>
+        </div>
+    </div>
+    <!-- End Promo Section - "We know design" -->
+
+    <!-- Start Team Section -->
+    <div id="team" class="padding">
+        <h3 class="center">THE TEAM</h3>
+        <p class="center">The ones who runs this company</p>
+
+        <div class="teamrow margin-top">
+            <div class="teamcolumn">
+                <div class="teamscards">
+                    <img src="images/team1.jpg" alt="John Doe">
+                    <div class="teamintro">
+                        <h3>John Doe</h3>
+                        <p class="title">CEO & Founder</p>
+                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                            elementum.
+                        </p>
+                        <p><button class="button"><i
+                                    class="fa-solid fa-envelope-open-text margin-right"></i>CONTACT</button></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="teamcolumn">
+                <div class="teamscards">
+                    <img src="images/team2.jpg" alt="John Doe">
+                    <div class="teamintro">
+                        <h3>Anja Doe</h3>
+                        <p class="title">Art Director</p>
+                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                            elementum.
+                        </p>
+                        <p><button class="button"><i
+                                    class="fa-solid fa-envelope-open-text margin-right"></i>CONTACT</button></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="teamcolumn">
+                <div class="teamscards">
+                    <img src="images/team3.jpg" alt="John Doe">
+                    <div class="teamintro">
+                        <h3>Mike Ross</h3>
+                        <p class="title">Web Designer</p>
+                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                            elementum.
+                        </p>
+                        <p><button class="button"><i
+                                    class="fa-solid fa-envelope-open-text margin-right"></i>CONTACT</button></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="teamcolumn">
+                <div class="teamscards">
+                    <img src="images/team4.jpg" alt="John Doe">
+                    <div class="teamintro">
+                        <h3>Dan Star</h3>
+                        <p class="title">Designer</p>
+                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                            elementum.
+                        </p>
+                        <p><button class="button"><i
+                                    class="fa-solid fa-envelope-open-text margin-right"></i>CONTACT</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Team Section -->
+
+    <!-- Start Promo Section "Statistics" -->
+    <div class="Statistics font-white">
+        <div class="Statisticscontainer center">
+            <span>14+</span><br>Partners
+        </div>
+        <div class="Statisticscontainer center">
+            <span>55+</span><br>Projects Done
+        </div>
+        <div class="Statisticscontainer center">
+            <span>89+</span><br>Happy Clients
+        </div>
+        <div class="Statisticscontainer center">
+            <span>150+</span><br>Meetings
+        </div>
+    </div>
+    <!-- End Promo Section "Statistics" -->
+
+    <!-- Start Work Section -->
+    <div id="work" class="padding">
+        <h3 class="center">OUR WORK</h3>
+        <p class="center">What we've done for people</p>
+
+        <div class="work-image-container margin-top">
+            <div class="work-image-section">
+                <img src="images/tech_mic.jpg" alt="A microphone" onclick="displayModel(this)">
+                <img src="images/tech_phone.jpg" alt="A microphone" onclick="displayModel(this)">
+                <img src="images/tech_drone.jpg" alt="A drone" onclick="displayModel(this)">
+                <img src="images/tech_sound.jpg" alt="Soundbox" onclick="displayModel(this)">
+            </div>
+
+            <div class="work-image-section">
+                <img src="images/tech_tablet.jpg" alt="A tablet" onclick="displayModel(this)">
+                <img src="images/tech_camera.jpg" alt="A camera" onclick="displayModel(this)">
+                <img src="images/tech_typewriter.jpg" alt="A typewriter" onclick="displayModel(this)">
+                <img src="images/tech_tableturner.jpg" alt="A tableturner" onclick="displayModel(this)">
+            </div>
+        </div>
+
+        <!-- Modal for full size images on click-->
+        <div id="myModel" class="model">
+            <span id="close" class="close center" alt="Close Model Image" onclick="closeModel()">&times;</span>
+            <div id="model-content">
+                <img id="modelimage" class="modal-image center font-white">
+                <div id="caption" class="modelcaption center font-white"></div>
+            </div>
+        </div>
+    </div>
+    <!-- End Work Section -->
+
+    <!-- Start Skills Section -->
+    <div class="skillsection">
+        <div class="skillcontainer">
+            <div class="skilltext">
+                <h3>Our Skills</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
+                    tempor incididunt ut labore et dolore.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
+                    tempor incididunt ut labore et dolore.</p>
+            </div>
+        </div>
+
+        <div class="skillcontainer">
+            <div class="skillbars">
+                <p><i class="fa-solid fa-camera margin-right"></i>Photography</p>
+                <div style="background-color:darkgray;">
+                    <div class="center" style="width:90%;color: white; background-color: rgb(85, 84, 84);">90%</div>
+                </div>
+
+                <p><i class="fa-solid fa-desktop margin-right"></i>Web Design</p>
+                <div style="background-color:darkgray;">
+                    <div class="center" style="width:85% ;color: white; background-color: rgb(85, 84, 84);">85%</div>
+                </div>
+
+                <p><i class="fa-regular fa-images margin-right"></i>Photoshop</p>
+                <div style="background-color:darkgray;">
+                    <div class="center" style="width: 75%;color: white; background-color: rgb(85, 84, 84);">75%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Skills Section -->
+
+    <!-- Start Pricing Section -->
+    <div id="pricing" class="padding">
+        <h3 class="center font-white">PRICING</h3>
+        <p class="center font-white">Choose a pricing plan that fits your needs.</p>
+
+        <div class="PricingRaw center margin-top">
+            <div class="PricingColuumn">
+
+                <ul class="PricingCard PricingCard-margin">
+                    <li class="PricingBlack font-white">Basic</li>
+                    <li class="PricingCard-padding"><strong>10GB</strong>Storage</li>
+                    <li class="PricingCard-padding"><strong>10</strong>Email</li>
+                    <li class="PricingCard-padding"><strong>10</strong>Domains</li>
+                    <li class="PricingCard-padding"><strong>Endless</strong>Support</li>
+                    <li class="PricingCard-padding">
+                        <h2>$ 10</h2>
+                        <span>per month</span>
+                    </li>
+                    <li class="PricingCard-padding Pricing-btn-bkgrnd">
+                        <button class="font-white">Sign Up</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="PricingColuumn">
+                <ul class="PricingCard">
+                    <li class="PricingRed font-white">Pro</li>
+                    <li class="PricingCard-padding"><strong>25GB</strong>Storage</li>
+                    <li class="PricingCard-padding"><strong>25</strong>Email</li>
+                    <li class="PricingCard-padding"><strong>25</strong>Domains</li>
+                    <li class="PricingCard-padding"><strong>Endless</strong>Support</li>
+                    <li class="PricingCard-padding">
+                        <h2>$ 25</h2>
+                        <span>per month</span>
+                    </li>
+                    <li class="PricingCard-padding Pricing-btn-bkgrnd">
+                        <button class="font-white">Sign Up</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="PricingColuumn">
+                <ul class="PricingCard PricingCard-margin">
+                    <li class="PricingBlack font-white">Premium</li>
+                    <li class="PricingCard-padding"><strong>50GB</strong>Storage</li>
+                    <li class="PricingCard-padding"><strong>50</strong>Email</li>
+                    <li class="PricingCard-padding"><strong>50</strong>Domains</li>
+                    <li class="PricingCard-padding"><strong>Endless</strong>Support</li>
+                    <li class="PricingCard-padding">
+                        <h2>$ 50</h2>
+                        <span>per month</span>
+                    </li>
+                    <li class="PricingCard-padding Pricing-btn-bkgrnd">
+                        <button class="font-white">Sign Up</button>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <!-- End Pricing Section -->
+
+    <!-- Start Contact Section -->
+    <div id="contact" class="padding">
+        <h3 class="center">CONTACT</h3>
+        <p class="center">Lets get in touch. Send us a message:</p>
+
+        <div class="contactdetail margin-top">
+            <p><i class="fa-solid fa-location-dot fa-2xl margin-right"></i>Chicago, US</p>
+            <p><i class="fa-solid fa-phone fa-2xl margin-right"></i>Phone: +00 151515</p>
+            <p><i class="fa-solid fa-envelope fa-2xl margin-right"></i>Email: mail@mail.com</p>
+        </div>
+        <br>
+        <form method="post">
+            <p><input type="text" name="name" placeholder="Name" required></p>
+            <p><input type="email" name="email" placeholder="Email" required></p>
+            <p><input type="text" name="subject" placeholder="Subject" required></p>
+            <p>
+                <textarea name="message" placeholder="Enter your Message here..." required></textarea>
+            </p>
+            <p>
+                <button type="submit" class="button btn font-white">
+                    <i class="fa-solid fa-paper-plane margin-right"></i>SEND MESSAGE
+                </button>
+            </p>
+        </form>
+
+        <!-- Image of location/map -->
+        <img src="images/map.jpg" class="map margin-top">
+    </div>
+    <!-- End Contact Section -->
+
+    <!-- start Footer -->
+    <footer class="center">
+        <a href="#home" class="button" style="padding: 10px 12px;">
+            <strong><i class="fa-solid fa-arrow-up margin-right"></i></strong>
+            To the top
+        </a>
+
+        <div>
+            <div class="hover-opacity"><i class="fa-brands fa-square-facebook fa-lg"></i></div>
+            <div class="hover-opacity"><i class="fa-brands fa-instagram fa-lg"></i></div>
+            <div class="hover-opacity"><i class="fa-brands fa-snapchat fa-lg"></i></div>
+            <div class="hover-opacity"><i class="fa-brands fa-pinterest-p fa-lg"></i></div>
+            <div class="hover-opacity"><i class="fa-brands fa-twitter fa-lg"></i></div>
+            <div class="hover-opacity"><i class="fa-brands fa-linkedin fa-lg"></i></div>
+        </div>
+
+        <p>Prepared by Maitri Davda</p>
+    </footer>
+    <!-- End Footer -->
+
+</body>
+
+</html>
