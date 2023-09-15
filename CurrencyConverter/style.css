@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(background-currency1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    padding: 0 10px;
+    min-height: 100vh;
+}
+
+.wrapper {
+    background-color: rgb(34, 34, 34);
+    border-radius: 7px;
+    width: 400px;
+    padding: 30px;
+    box-shadow: 0 4px 10px 0 rgba(11, 11, 11, 0.85);
+}
+
+header {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+label,
+input,
+.select-box {
+    margin-top: 5px;
+}
+
+form :where(input, select, button) {
+    border: none;
+    border-radius: 5px;
+    background: rgb(68, 68, 68);
+    color: white;
+    width: 100%;
+    outline: none;
+}
+
+input {
+    height: 50px;
+    font-size: 17px;
+    padding: 0 15px;
+}
+
+input:focus {
+    padding: 0 14px;
+    border: 2px solid rgb(120, 120, 122);
+    background-color: rgb(85, 85, 85);
+}
+
+form p {
+    font-size: 18px;
+}
+
+form .drop-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.drop-list .select-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(153, 153, 153);
+    border-radius: 5px;
+    height: 45px;
+    width: 115px;
+}
+
+.select-box img {
+    max-width: 21px;
+}
+
+.select-box select {
+    width: auto;
+    background: none;
+    font-size: 16px;
+    margin: 0 -5px0 5px;
+    color: black;
+}
+
+.drop-list, .icon {
+    cursor: pointer;
+    margin-top: 23px;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+}
+
+.exchange-rate {
+    margin-top: 15px;
+    margin: 20px 0 30px 0;
+}
+
+button {
+    height: 50px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(85, 85, 85);
+}
+button:active{
+    transform: scale(0.95);
+}
+
+.select-box select::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+.select-box select::-webkit-scrollbar-track {
+    background: rgb(85, 85, 85);;
+  }
