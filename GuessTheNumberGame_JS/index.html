@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="form">
+            <header>Guess the Number</header>
+            <br>
+            <p>We have selected a random number between 1 - 100.</p>
+            <p>See if you can guess it.</p>
+            <input type="text" id="guessField" onfocus="this.value=''" autofocus>
+
+            <div class="message">
+                <p id="guessText"></p>
+                <p id="NumberOfAttempts"></p>
+                <p id="HighScore"></p>
+            </div>
+
+            <div class="btn">
+                <button onclick="checkRandomNumber()">Check Number</button>
+                <input type="reset" value="Reset" id="reset" onClick="window.location.reload()">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
